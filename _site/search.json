@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Population Genomics Workshop: Identification of Imported Cases",
+    "section": "",
+    "text": "DISCLAIMER\n\n\n\nThe following tutorial is simulated for workshops purposes.\nThis workshop should only be used for training purposes.\n\n\n\n1 The Scenario\nIn early 2025, an unexpected cluster of approximately 200 Plasmodium falciparum malaria cases was reported in a district of Namibia, Africa that had previously achieved malaria-free status in 2019. This district is a popular tourism destination, attracting visitors from across the world, making imported infections a key concern for surveillance teams.\nAlthough local transmission in Namibia had been largely interrupted, bordering countries particularly Angola continue to experience substantial malaria transmission, including recent surges in case numbers. Because of the region’s interconnected human movement and historical importation events, rapid genomic investigation was initiated to determine whether this new outbreak represented:\n\nA resurgence of local parasite circulation,\nOngoing regional transmission from neighbouring endemic countries, or\nAn imported outbreak from outside Africa.\n\nTo investigate, all cases were genotyped using a global 180-SNP barcode, providing a compact yet highly informative set of markers for population structure, relatedness, and transmission inference.\n\n\n\n\n\n\nQuestion\n\n\n\n1.0.0.1 Can you you identify where in the world the outbreak has originated?"
+  }
+]
