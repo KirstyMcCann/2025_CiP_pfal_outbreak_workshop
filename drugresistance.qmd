@@ -105,7 +105,6 @@ heatmap
 ```
 :::
 
-
 ### 10.3. Map coloured by C580Y status
 
 -   What does this tell us about the imported cases?

@@ -12,100 +12,103 @@ output:
 
 By the end of this workshop, you should be able to:
 
-<div>
+**1. Identify the outbreak source**
 
-> 1.  **Identify the outbreak source**
->
->     -   Use genetic clustering and tree-based analyses to pinpoint the Cambodian donor lineage that seeded the Namibia outbreak.
->
-> 2.  **Recognise major population structure**
->
->     -   Distinguish African from Southeast Asian parasite populations using multivariate analyses and phylogenetic trees.
->
-> 3.  **Interpret drug-resistance patterns**
->
->     -   Observe how resistance mutations (e.g., kelch13 C580Y, CRT, MDR1, DHFR, DHPS) cluster within the import-linked lineage.
->
->     -   Understand how resistance profiles reinforce evidence of importation.
->
-> 4.  **Analyse geographic patterns**
->
->     -   Map sampling locations and resistance markers to visualise spatial patterns of transmission, importation, and diversity.
->
-> 5.  **Understand transmission connectedness**
->
->     -   Use connectedness maps to compare genetic similarity between sites and countries, identifying likely transmission links and importation pathways.
->
-> 6.  **Quantify genetic diversity and relatedness**
->
->     -   Use:
->
->         -   Nucleotide diversity (π) to compare variation between sites
->
->         -   Fst to measure differentiation
->
->         -   DAPC (optional) to identify and visualise clusters
->
->     -   Integrate these metrics to understand population structure and outbreak dynamics
+-   Use genetic clustering and tree-based analyses to pinpoint the Cambodian donor lineage that seeded the Namibia outbreak.
 
-</div>
+**2. Recognise major population structure**
+
+-   Distinguish African from Southeast Asian parasite populations using multivariate analyses and phylogenetic trees.
+
+**3. Interpret drug-resistance patterns**
+
+-   Observe how resistance mutations (e.g., kelch13 C580Y, CRT, MDR1, DHFR, DHPS) cluster within the import-linked lineage.
+
+-   Understand how resistance profiles reinforce evidence of importation.
+
+**4. Analyse geographic patterns**
+
+-   Map sampling locations and resistance markers to visualise spatial patterns of transmission, importation, and diversity.
+
+**5. Understand transmission connectedness**
+
+-   Use connectedness maps to compare genetic similarity between sites and countries, identifying likely transmission links and importation pathways.
+
+**6. Quantify genetic diversity and relatedness**
+
+-   Use:
+
+    -   Nucleotide diversity (π) to compare variation between sites
+
+    -   Fst to measure differentiation
+
+    -   DAPC (optional) to identify and visualise clusters
+
+-   Integrate these metrics to understand population structure and outbreak dynamics
 
 # Workshop Results
 
-> ### **Identification of the outbreak source**
->
-> The genetic analyses consistently demonstrated that the Namibian outbreak cluster is most closely related to a small group of Cambodian isolates.\
->
-> Across PCoA, phylogenetic trees, haplotype networks, and connectedness maps, the same pattern emerged:\
->
-> → 10 Cambodian founder isolates seeded the Namibia outbreak.
+### **Identification of the outbreak source**
 
-> ### 
-> **Distinct population structure**
->
-> There is a clear separation between Southeast Asian and African parasite populations.
->
-> -   SEA clusters tightly and distinctly from the rest.
->
-> -   African populations show broader diversity and weaker structure overall.
+The genetic analyses consistently demonstrated that the Namibian outbreak cluster is most closely related to a small group of Cambodian isolates.
 
-> ### **Drug-resistant lineage detection**
->
-> The outbreak lineage is characterised by:
->
-> -   C580Y kelch13 mutation,
->
-> -   A full background of crt, mdr1, dhfr, and dhps mutations typically associated with artemisinin and partner-drug resistance.
->
-> These mutations were exclusive to the Cambodian founders and the Namibia outbreak samples, confirming a single imported resistant lineage rather than local evolution.
+Across PCoA, phylogenetic trees, haplotype networks, and connectedness maps, the same pattern emerged:
 
-> ### **Geographic patterns**
->
-> Mapping revealed:
->
-> -   Strong spatial clustering of outbreak-associated samples within Namibia.
->
-> -   Overlap and admixture among other African sites, consistent with regional gene flow.
->
-> -   Complete absence of SEA-type DR mutations outside the outbreak cluster.
+-   10 Cambodian founder isolates seeded the Namibia outbreak.
 
-> ### **Connectedness between populations**
->
-> Connectedness maps showed:
->
-> -   High genetic similarity links between Cambodian founder sites and Namibian outbreak sites.
->
-> -   Regional linkage clusters within Africa (e.g., Angola ↔ Botswana).
->
-> -   Weak or no genetic connectivity between distant African countries and between Africa and SEA, except for the imported lineage.
+### **Identification of the outbreak source**
 
-> ### **Genetic diversity and differentiation**
->
-> -   Nucleotide diversity (π) differed by site, reflecting varying transmission intensity and genetic mixing.
->
-> -   Pairwise Fst supported strong differentiation between regions and between outbreak and non-outbreak samples.
+The genetic analyses consistently demonstrated that the Namibian outbreak cluster is most closely related to a small group of Cambodian isolates.\
 
-### **Overall interpretation**
+Across PCoA, phylogenetic trees, haplotype networks, and connectedness maps, the same pattern emerged:
+
+-   10 Cambodian founder isolates seeded the Namibia outbreak.
+
+### **Distinct population structure**
+
+There is a clear separation between Southeast Asian and African parasite populations.
+
+-   SEA clusters tightly and distinctly from the rest.
+
+-   African populations show broader diversity and weaker structure overall.
+
+### **Drug-resistant lineage detection**
+
+The outbreak lineage is characterised by:
+
+-   C580Y kelch13 mutation,
+
+-   A full background of crt, mdr1, dhfr, and dhps mutations typically associated with artemisinin and partner-drug resistance.
+
+These mutations were exclusive to the Cambodian founders and the Namibia outbreak samples, confirming a single imported resistant lineage rather than local evolution.
+
+### **Geographic patterns**
+
+Mapping revealed:
+
+-   Strong spatial clustering of outbreak-associated samples within Namibia.
+
+-   Overlap and admixture among other African sites, consistent with regional gene flow.
+
+-   Complete absence of SEA-type DR mutations outside the outbreak cluster.
+
+### **Connectedness between populations**
+
+Connectedness maps showed:
+
+-   High genetic similarity links between Cambodian founder sites and Namibian outbreak sites.
+
+-   Regional linkage clusters within Africa (e.g., Angola ↔ Botswana).
+
+-   Weak or no genetic connectivity between distant African countries and between Africa and SEA, except for the imported lineage.
+
+### **Genetic diversity and differentiation**
+
+-   Nucleotide diversity (π) differed by site, reflecting varying transmission intensity and genetic mixing.
+
+-   Pairwise Fst supported strong differentiation between regions and between outbreak and non-outbreak samples.
+
+## **Overall interpretation**
 
 All analyses converge on the same conclusion:
 

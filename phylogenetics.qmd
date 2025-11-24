@@ -62,7 +62,6 @@ tree_plot_SEA <- ggtree(tree, layout = "fan") %<+% meta_ord +
 
 ```
 
-
 ::: {.callout-note collapse="true"}
 ## Click to see plot
 
@@ -137,7 +136,7 @@ tree_plot_SEA
 ## Solution
 
 | Purpose | Best Method | Why |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Explore broad population structure | PCoA | Fast, intuitive, clustering-focused |
 | Identify outbreak clusters | PCoA and Trees | PCoA visualises clusters, tree shows lineage |
 | Examine evolutionary relationships | Tree | Reflects ancestral history |

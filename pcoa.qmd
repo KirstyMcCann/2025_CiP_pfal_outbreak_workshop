@@ -98,7 +98,6 @@ pcoa
 ```
 :::
 
-
 ### **What PCoA Does?**
 
 -   Converts genetic distances between samples into a visual 2-D or 3-D space.
