@@ -1,0 +1,67 @@
+/* css styles */
+/* Change link color */
+a {
+  color: #38A5E0; /* Replace with your desired color */
+  text-decoration: none; /* Optional: Remove underline */
+  /*font-weight: bold; /* Make text bold */
+}
+
+/* Change link color on hover */
+a:hover {
+  color: #90CFF0; /* Replace with your desired hover color */
+  text-decoration: underline; /* Optional: Add underline on hover */
+  /*font-weight: bold; /* Make text bold */
+}
+
+h1 {
+  color: #15573A;
+}
+
+h2 {
+  color: #15573A;
+}
+
+h3 {
+  color: #15573A;
+}
+
+h4 {
+  color: #15573A;
+}
+
+.circular-image {
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Ensure width and height are equal */
+  object-fit: cover; /* To ensure the image fits within the circular frame */
+  border-radius: 50%; /* Creates the circular effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+summary {
+  font-size: 1.25em;       /* Adjust font size */
+  font-weight: bold;       /* Make text bold */
+  cursor: pointer;         /* Set cursor to pointer */
+  margin-bottom: 5px;      /* Add margin below */
+  color: #15573A!important; /* Force text color to green */
+}
+
+summary:hover {
+  color: #38A5E0;          /* Change text color on hover (e.g., tomato red) */
+}
+
+summary::marker {
+  color: #90CFF0;          /* Change the color of the disclosure arrow/marker */
+}
+
+details {
+  margin-bottom: 10px;     /* Add spacing between collapsible sections */
+}
+
+.centre-align {
+  text-align: center;
+}
+
+.centre-align img {
+  display: block;
+  margin: 0 auto;
+}
