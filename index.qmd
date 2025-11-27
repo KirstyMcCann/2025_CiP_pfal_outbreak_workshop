@@ -11,7 +11,7 @@ output:
 ::: callout-important
 ## DISCLAIMER
 
-The following tutorial is simulated for workshops purposes.
+The following tutorial is simulated for workshop purposes.
 
 This workshop should only be used for training purposes.
 :::
@@ -37,5 +37,5 @@ To investigate the origin of this cluster, all cases were genotyped using a glob
 ## Question
 :::
 
-#### Can you you identify where in the world the outbreak has originated?
+#### Can you identify where in the world the outbreak has originated?
 ::::

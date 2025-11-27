@@ -88,15 +88,15 @@ As we completed the genomic analysis, a striking pattern emerged:
 ### **Namibian outbreak parasites clustered tightly with a subset of Cambodian isolates.**
 :::
 
-At first glance, this raised a fundamental question:
+At first glance, this raised a fundamental question: 
 
 ::: {.callout-note appearance="simple"}
-### **Is the outbreak Cambodia imported to Africa OR is it Africa imported into Cambodia?**
+### Is the outbreak caused from parasites imported from Cambodia into Africa OR from Africa into Cambodia? 
 :::
 
 This is a common source of confusion when interpreting “imported case” narratives.
 
-### **The DNA doesn’t lie and it provides a consistent explanation.**
+### Using multiple genetic analyses provides a consistent explanation.
 
 Although the outbreak parasites group with a small Cambodian lineage, those specific Cambodian samples themselves carry a largely African genetic history. This pattern can occur when:
 
@@ -127,3 +127,33 @@ This demonstrates exactly why genomic surveillance is critical:
 
 -   Genomics tells us where from and which direction the parasites moved.
 :::
+
+------------------------------------------------------------------------
+
+# References/Links
+
+-   [plotly for R](https://plotly.com/r/)
+
+-   [ggplot2 documentation](https://ggplot2.tidyverse.org/)
+
+-   [ggtree](https://yulab-smu.top/treedata-book/)
+
+-   [vcfR](https://knausb.github.io/vcfR_documentation/)
+
+-   [poppr](https://grunwaldlab.github.io/poppr/)
+
+-   [ape](https://cran.r-project.org/web/packages/ape/index.html)
+
+-   [pegas](https://github.com/emmanuelparadis/pegas)
+
+-   [rnaturalearthdata](https://docs.ropensci.org/rnaturalearthdata/)
+
+-   [viridis](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
+
+-   [heirfstat](https://cran.r-project.org/web/packages/hierfstat/hierfstat.pdf)
+
+-   [PGEforge](https://mrc-ide.github.io/PGEforge/)
+
+-   [PlasmoGenEpi](https://www.plasmogenepi.org/) - online course and data anaysis standards
+
+-   [GenRe - Mekong](https://genremekong.org/) - transforming data into a Genetic Report Card (GRC), grcMalaria tool, EpiGenTracker
