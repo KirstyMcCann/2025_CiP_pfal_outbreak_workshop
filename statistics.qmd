@@ -139,9 +139,9 @@ nuc_sea
 
 -   In outbreak genomics:
 
-    -   Low π → **clonal**, single-source introduction
+    -   Low π = clonal, single-source introduction
 
-    -   High π → **diverse**, long-standing transmission
+    -   High π = diverse, long-standing transmission
 
 ### **Strengths**
 

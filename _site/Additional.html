@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-c7800b58b690ddf0055b5036d59f936e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -245,7 +245,7 @@ Warning
 <p>You may need to zoom into this figure to see the connections.</p>
 </div>
 </div>
-<p>Here we define a reusable function to map genetic connectedness between <strong>sites or</strong> countries** using the PCoA distance matrix.</p>
+<p>Here we define a reusable function to map genetic connectedness between sites or countries using the PCoA distance matrix.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -474,7 +474,7 @@ Exercises for Section 12.
 <section id="what-is-dapc" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-dapc"><strong>What is DAPC?</strong></h2>
 <ul>
-<li><p>DAPC = Discriminant Analysis of Principal Components, implemented in <em>adegenet</em>.</p></li>
+<li><p>DAPC = Discriminant Analysis of Principal Components, implemented in <a href="https://academic.oup.com/bioinformatics/article/24/11/1403/191127">adegenet</a>.</p></li>
 <li><p>It is a multivariate clustering method specifically designed for genetic data.</p></li>
 <li><p>It works in two steps:</p>
 <div>
@@ -490,9 +490,9 @@ Exercises for Section 12.
 <section id="dapc-explicitly-maximises-between-group-differences" class="level3">
 <h3 class="anchored" data-anchor-id="dapc-explicitly-maximises-between-group-differences"><strong>1. DAPC explicitly maximises between-group differences</strong></h3>
 <ul>
-<li><p>PCoA is <em>unsupervised</em> → it reduces the entire distance matrix in a neutral way.</p></li>
-<li><p>DAPC is <em>supervised</em> → you specify group labels (e.g., country, site, outbreak cluster).</p></li>
-<li><p>This allows DAPC to highlight <strong>the separation you care about</strong>, even if subtle.</p></li>
+<li><p>PCoA is unsupervised - it reduces the entire distance matrix in a neutral way.</p></li>
+<li><p>DAPC is supervised - you specify group labels (e.g., country, site, outbreak cluster).</p></li>
+<li><p>This allows DAPC to highlight the separation you care about, even if subtle.</p></li>
 </ul>
 </section>
 <section id="dapc-is-more-powerful-for-detecting-population-structure" class="level3">
@@ -511,7 +511,7 @@ Exercises for Section 12.
 <h3 class="anchored" data-anchor-id="dapc-is-not-constrained-by-assumptions-of-hardyweinberg-equilibrium"><strong>3. DAPC is not constrained by assumptions of Hardy–Weinberg equilibrium</strong></h3>
 <ul>
 <li><p>Many traditional population genetic methods assume HWE.</p></li>
-<li><p><strong>DAPC does not</strong>, making it suitable for:</p>
+<li><p>DAPC does not, making it suitable for:</p>
 <ul>
 <li><p>mixed infections</p></li>
 <li><p>clonally expanding outbreaks</p></li>
@@ -520,7 +520,7 @@ Exercises for Section 12.
 </ul>
 </section>
 <section id="dapc-works-well-when-the-goal-is-assignment-or-classification" class="level3">
-<h3 class="anchored" data-anchor-id="dapc-works-well-when-the-goal-is-assignment-or-classification"><strong>4. DAPC works well when the goal is <em>assignment or classification</em></strong></h3>
+<h3 class="anchored" data-anchor-id="dapc-works-well-when-the-goal-is-assignment-or-classification"><strong>4. DAPC works well when the goal is assignment or classification</strong></h3>
 <ul>
 <li><p>You can classify individuals into:</p>
 <ul>
@@ -529,7 +529,7 @@ Exercises for Section 12.
 <li><p>haplotypes</p></li>
 <li><p>outbreak vs.&nbsp;non-outbreak lineages</p></li>
 </ul></li>
-<li><p>It also provides <strong>posterior membership probabilities</strong>, helpful for detecting:</p>
+<li><p>It also provides posterior membership probabilities, helpful for detecting:</p>
 <ul>
 <li><p>imports</p></li>
 <li><p>admixture</p></li>
@@ -552,11 +552,11 @@ Exercises for Section 12.
 <section id="weaknesses-of-dapc" class="level2">
 <h2 class="anchored" data-anchor-id="weaknesses-of-dapc"><strong>Weaknesses of DAPC</strong></h2>
 <ul>
-<li><p><strong>Requires predefined groups</strong> — PCoA does not.<br>
+<li><p>Requires predefined groups - PCoA does not.<br>
 (Although <code>find.clusters()</code> can infer groups first.)</p></li>
-<li><p><strong>Can overfit</strong> if too many PCs are retained.</p></li>
-<li><p><strong>Not a true evolutionary model</strong> — separation is statistical, not phylogenetic.</p></li>
-<li><p><strong>Less intuitive</strong> for beginners compared with PCA/PCoA.</p></li>
+<li><p>Can overfit if too many PCs are retained.</p></li>
+<li><p>Not a true evolutionary model - separation is statistical, not phylogenetic.</p></li>
+<li><p>Less intuitive for beginners compared with PCA/PCoA.</p></li>
 </ul>
 </section>
 <section id="when-to-use-pcoa-vs-dapc" class="level2">
@@ -693,7 +693,7 @@ Exercises for Section 12.
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/KirstyMcCann\.github\.io\/2025_CiP_pfal_outbreak_workshop\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1054,7 +1054,7 @@ Exercises for Section 12.
 <span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>You may need to zoom into this figure to see the connections.</span>
 <span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>Here we define a reusable function to map genetic connectedness between **sites or** countries<span class="sc">\*\*</span> using the PCoA distance matrix.</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>Here we define a reusable function to map genetic connectedness between sites or countries using the PCoA distance matrix.</span>
 <span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="in">```{r map-connectedness-func, echo=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE}</span></span>
 <span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>map_connectedness <span class="ot">&lt;-</span> <span class="cf">function</span>(meta, dist_mat, <span class="at">group_var =</span> <span class="fu">c</span>(<span class="st">"site"</span>, <span class="st">"country"</span>),</span>
@@ -1229,7 +1229,7 @@ Exercises for Section 12.
 <span id="cb7-209"><a href="#cb7-209" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-210"><a href="#cb7-210" aria-hidden="true" tabindex="-1"></a><span class="fu">## **What is DAPC?**</span></span>
 <span id="cb7-211"><a href="#cb7-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-212"><a href="#cb7-212" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>DAPC = Discriminant Analysis of Principal Components, implemented in *adegenet*.</span>
+<span id="cb7-212"><a href="#cb7-212" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>DAPC = Discriminant Analysis of Principal Components, implemented in <span class="co">[</span><span class="ot">adegenet</span><span class="co">](https://academic.oup.com/bioinformatics/article/24/11/1403/191127)</span>.</span>
 <span id="cb7-213"><a href="#cb7-213" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-214"><a href="#cb7-214" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>It is a multivariate clustering method specifically designed for genetic data.</span>
 <span id="cb7-215"><a href="#cb7-215" aria-hidden="true" tabindex="-1"></a></span>
@@ -1246,11 +1246,11 @@ Exercises for Section 12.
 <span id="cb7-226"><a href="#cb7-226" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-227"><a href="#cb7-227" aria-hidden="true" tabindex="-1"></a><span class="fu">### **1. DAPC explicitly maximises between-group differences**</span></span>
 <span id="cb7-228"><a href="#cb7-228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-229"><a href="#cb7-229" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>PCoA is *unsupervised* → it reduces the entire distance matrix in a neutral way.</span>
+<span id="cb7-229"><a href="#cb7-229" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>PCoA is unsupervised - it reduces the entire distance matrix in a neutral way.</span>
 <span id="cb7-230"><a href="#cb7-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-231"><a href="#cb7-231" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>DAPC is *supervised* → you specify group labels (e.g., country, site, outbreak cluster).</span>
+<span id="cb7-231"><a href="#cb7-231" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>DAPC is supervised - you specify group labels (e.g., country, site, outbreak cluster).</span>
 <span id="cb7-232"><a href="#cb7-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-233"><a href="#cb7-233" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>This allows DAPC to highlight **the separation you care about**, even if subtle.</span>
+<span id="cb7-233"><a href="#cb7-233" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>This allows DAPC to highlight the separation you care about, even if subtle.</span>
 <span id="cb7-234"><a href="#cb7-234" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-235"><a href="#cb7-235" aria-hidden="true" tabindex="-1"></a><span class="fu">### **2. DAPC is more powerful for detecting population structure**</span></span>
 <span id="cb7-236"><a href="#cb7-236" aria-hidden="true" tabindex="-1"></a></span>
@@ -1268,7 +1268,7 @@ Exercises for Section 12.
 <span id="cb7-248"><a href="#cb7-248" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-249"><a href="#cb7-249" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Many traditional population genetic methods assume HWE.</span>
 <span id="cb7-250"><a href="#cb7-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-251"><a href="#cb7-251" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**DAPC does not**, making it suitable for:</span>
+<span id="cb7-251"><a href="#cb7-251" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>DAPC does not, making it suitable for:</span>
 <span id="cb7-252"><a href="#cb7-252" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-253"><a href="#cb7-253" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>mixed infections</span>
 <span id="cb7-254"><a href="#cb7-254" aria-hidden="true" tabindex="-1"></a></span>
@@ -1276,7 +1276,7 @@ Exercises for Section 12.
 <span id="cb7-256"><a href="#cb7-256" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-257"><a href="#cb7-257" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>organisms with unusual inheritance (e.g., malaria parasites)</span>
 <span id="cb7-258"><a href="#cb7-258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-259"><a href="#cb7-259" aria-hidden="true" tabindex="-1"></a><span class="fu">### **4. DAPC works well when the goal is *assignment or classification***</span></span>
+<span id="cb7-259"><a href="#cb7-259" aria-hidden="true" tabindex="-1"></a><span class="fu">### **4. DAPC works well when the goal is assignment or classification**</span></span>
 <span id="cb7-260"><a href="#cb7-260" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-261"><a href="#cb7-261" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>You can classify individuals into:</span>
 <span id="cb7-262"><a href="#cb7-262" aria-hidden="true" tabindex="-1"></a></span>
@@ -1288,7 +1288,7 @@ Exercises for Section 12.
 <span id="cb7-268"><a href="#cb7-268" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-269"><a href="#cb7-269" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>outbreak vs. non-outbreak lineages</span>
 <span id="cb7-270"><a href="#cb7-270" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-271"><a href="#cb7-271" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>It also provides **posterior membership probabilities**, helpful for detecting:</span>
+<span id="cb7-271"><a href="#cb7-271" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>It also provides posterior membership probabilities, helpful for detecting:</span>
 <span id="cb7-272"><a href="#cb7-272" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-273"><a href="#cb7-273" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>imports</span>
 <span id="cb7-274"><a href="#cb7-274" aria-hidden="true" tabindex="-1"></a></span>
@@ -1308,14 +1308,14 @@ Exercises for Section 12.
 <span id="cb7-288"><a href="#cb7-288" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-289"><a href="#cb7-289" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Weaknesses of DAPC**</span></span>
 <span id="cb7-290"><a href="#cb7-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-291"><a href="#cb7-291" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Requires predefined groups** — PCoA does not.\</span>
+<span id="cb7-291"><a href="#cb7-291" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Requires predefined groups - PCoA does not.\</span>
 <span id="cb7-292"><a href="#cb7-292" aria-hidden="true" tabindex="-1"></a>    (Although <span class="in">`find.clusters()`</span> can infer groups first.)</span>
 <span id="cb7-293"><a href="#cb7-293" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-294"><a href="#cb7-294" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Can overfit** if too many PCs are retained.</span>
+<span id="cb7-294"><a href="#cb7-294" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Can overfit if too many PCs are retained.</span>
 <span id="cb7-295"><a href="#cb7-295" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-296"><a href="#cb7-296" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Not a true evolutionary model** — separation is statistical, not phylogenetic.</span>
+<span id="cb7-296"><a href="#cb7-296" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Not a true evolutionary model - separation is statistical, not phylogenetic.</span>
 <span id="cb7-297"><a href="#cb7-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-298"><a href="#cb7-298" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Less intuitive** for beginners compared with PCA/PCoA.</span>
+<span id="cb7-298"><a href="#cb7-298" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Less intuitive for beginners compared with PCA/PCoA.</span>
 <span id="cb7-299"><a href="#cb7-299" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-300"><a href="#cb7-300" aria-hidden="true" tabindex="-1"></a><span class="fu">## When to use PcoA vs DAPC?</span></span>
 <span id="cb7-301"><a href="#cb7-301" aria-hidden="true" tabindex="-1"></a></span>

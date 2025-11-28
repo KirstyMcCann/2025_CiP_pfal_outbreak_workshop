@@ -32,7 +32,7 @@ gl_all <- readRDS("derived/gl_all.rds")
 You may need to zoom into this figure to see the connections.
 :::
 
-Here we define a reusable function to map genetic connectedness between **sites or** countries\*\* using the PCoA distance matrix.
+Here we define a reusable function to map genetic connectedness between sites or countries using the PCoA distance matrix.
 
 ```{r map-connectedness-func, echo=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE}
 map_connectedness <- function(meta, dist_mat, group_var = c("site", "country"),
@@ -224,11 +224,11 @@ membership <- compoplot(dapc, lab="", posi=list(x=100,y=-.03), cleg=.7)
 
 ### **1. DAPC explicitly maximises between-group differences**
 
--   PCoA is *unsupervised* → it reduces the entire distance matrix in a neutral way.
+-   PCoA is unsupervised - it reduces the entire distance matrix in a neutral way.
 
--   DAPC is *supervised* → you specify group labels (e.g., country, site, outbreak cluster).
+-   DAPC is supervised - you specify group labels (e.g., country, site, outbreak cluster).
 
--   This allows DAPC to highlight **the separation you care about**, even if subtle.
+-   This allows DAPC to highlight the separation you care about, even if subtle.
 
 ### **2. DAPC is more powerful for detecting population structure**
 
@@ -246,7 +246,7 @@ membership <- compoplot(dapc, lab="", posi=list(x=100,y=-.03), cleg=.7)
 
 -   Many traditional population genetic methods assume HWE.
 
--   **DAPC does not**, making it suitable for:
+-   DAPC does not, making it suitable for:
 
     -   mixed infections
 
@@ -254,7 +254,7 @@ membership <- compoplot(dapc, lab="", posi=list(x=100,y=-.03), cleg=.7)
 
     -   organisms with unusual inheritance (e.g., malaria parasites)
 
-### **4. DAPC works well when the goal is *assignment or classification***
+### **4. DAPC works well when the goal is assignment or classification**
 
 -   You can classify individuals into:
 
@@ -266,7 +266,7 @@ membership <- compoplot(dapc, lab="", posi=list(x=100,y=-.03), cleg=.7)
 
     -   outbreak vs. non-outbreak lineages
 
--   It also provides **posterior membership probabilities**, helpful for detecting:
+-   It also provides posterior membership probabilities, helpful for detecting:
 
     -   imports
 
@@ -286,14 +286,14 @@ membership <- compoplot(dapc, lab="", posi=list(x=100,y=-.03), cleg=.7)
 
 ## **Weaknesses of DAPC**
 
--   **Requires predefined groups** — PCoA does not.\
+-   Requires predefined groups - PCoA does not.\
     (Although `find.clusters()` can infer groups first.)
 
--   **Can overfit** if too many PCs are retained.
+-   Can overfit if too many PCs are retained.
 
--   **Not a true evolutionary model** — separation is statistical, not phylogenetic.
+-   Not a true evolutionary model - separation is statistical, not phylogenetic.
 
--   **Less intuitive** for beginners compared with PCA/PCoA.
+-   Less intuitive for beginners compared with PCA/PCoA.
 
 ## When to use PcoA vs DAPC?
 
