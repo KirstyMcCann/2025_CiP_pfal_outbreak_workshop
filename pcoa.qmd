@@ -9,24 +9,7 @@ output:
 ---
 
 ```{r load-packages, include=FALSE}
-library(vcfR)
-library(adegenet)
-library(poppr)
-library(ape)
-library(pegas)
-library(ggplot2)
-library(dplyr)
-library(reshape2)
-library(ggtree)
-library(viridis)
-library(dartR.base)
-library(hierfstat)
-library(tidyr)
-library(sf)
-library(rnaturalearth)
-library(rnaturalearthdata)
-library(scales)
-library(purrr)
+source("packages.R")
 
 ```
 
@@ -66,7 +49,10 @@ saveRDS(gl_SEA, file = "derived/gl_SEA.rds")
 -   What does this tell you about the population structure?
 -   Why do we use PCoA plots?
 
-Other tasks: - Use ggplot2 (<https://ggplot2.tidyverse.org/)> to change colours or change the shapes of the countries. - What happens if you change the data to sites?
+Other tasks:
+
+-   Use [ggplot2](https://ggplot2.tidyverse.org/) to change colours or change the shapes of the countries.
+-   What happens if you change the data to sites?
 
 Ensure you generate PCoA for both SEA and ARF datasets!
 :::
@@ -98,7 +84,7 @@ pcoa
 ```
 :::
 
-### **What PCoA Does?**
+### **What Does PCoA Do?**
 
 -   Converts genetic distances between samples into a visual 2-D or 3-D space.
 

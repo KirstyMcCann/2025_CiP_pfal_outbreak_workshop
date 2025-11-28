@@ -14,7 +14,23 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
 ## 1. Install and Load Packages and Data
 
-To install the following packages on your computer you will need to use: install.packages() or if (!require("BiocManager", quietly = TRUE)) install.packages("BiocManager") BiocManager::install()
+To install the following packages on your computer you will need to use:
+
+```{r setup2}
+#| exec: false
+#| eval: false 
+install.packages()
+```
+
+or
+
+```{r setup3}
+#| exec: false
+#| eval: false 
+if (!require("BiocManager", quietly = TRUE)) 
+  install.packages("BiocManager") 
+BiocManager::install()
+```
 
 Note: The \#'s throughout the file are comments, if you remove the \# from the line in the code chunk you can run that line.
 
@@ -42,6 +58,9 @@ library(rnaturalearth)
 library(rnaturalearthdata)
 library(scales)
 library(purrr)
+
+# OR: 
+source("packages.R")
 
 ```
 
