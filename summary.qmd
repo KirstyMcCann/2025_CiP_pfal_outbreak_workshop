@@ -91,7 +91,7 @@ As we completed the genomic analysis, a striking pattern emerged:
 At first glance, this raised a fundamental question: 
 
 ::: {.callout-note appearance="simple"}
-### Is the outbreak caused from parasites imported from Cambodia into Africa OR from Africa into Cambodia? 
+### Is the outbreak caused from parasites imported from Cambodia into Africa OR from Africa into Cambodia?
 :::
 
 This is a common source of confusion when interpreting “imported case” narratives.

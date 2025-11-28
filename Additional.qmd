@@ -9,24 +9,7 @@ output:
 ---
 
 ```{r load-packages, include=FALSE}
-library(vcfR)
-library(adegenet)
-library(poppr)
-library(ape)
-library(pegas)
-library(ggplot2)
-library(dplyr)
-library(reshape2)
-library(ggtree)
-library(viridis)
-library(dartR.base)
-library(hierfstat)
-library(tidyr)
-library(sf)
-library(rnaturalearth)
-library(rnaturalearthdata)
-library(scales)
-library(purrr)
+source("packages.R")
 
 meta <- read.table("data/metadata_samples.txt", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 dist_mat_SEA <- readRDS("derived/dist_mat_SEA.rds")
@@ -183,6 +166,8 @@ p_site <- map_connectedness(meta, dist_mat_all,
 
 ```{r}
 #| echo: false
+#| fig-width: 12
+#| fig-height: 5
 p_site
 ```
 :::
@@ -220,11 +205,9 @@ membership <- compoplot(dapc, lab="", posi=list(x=100,y=-.03), cleg=.7)
 
 ```
 
-
-
 ## **What is DAPC?**
 
--   DAPC = Discriminant Analysis of Principal Components, implemented in *adegenet*.
+-   DAPC = Discriminant Analysis of Principal Components, implemented in [adegenet](https://academic.oup.com/bioinformatics/article/24/11/1403/191127).
 
 -   It is a multivariate clustering method specifically designed for genetic data.
 
